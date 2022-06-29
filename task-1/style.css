@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--base-color: rgb(0, 119, 128);
+	--base-color-dark: rgb(1, 56, 59);
+	--base-color-light: rgb(11, 193, 206);
+	--white-accent: rgb(183, 231, 234);
+}
+.d-flex {
+	display: flex;
+}
+.container {
+	max-width: 1140px;
+	margin: auto;
+}
+body {
+	min-height: 100vh;
+}
+.wrapper {
+	width: 100%;
+	background-color: var(--base-color);
+}
+/* ======================== /header=================== */
+.header {
+	min-height: 70vh;
+	background: var(--white-accent);
+}
+.navbar {
+	min-height: 40px;
+	width: 100%;
+	background: var(--base-color-dark);
+
+	padding-inline: 20px;
+	align-items: center;
+}
+.logo {
+	width: 50px;
+	height: 30px;
+	background: var(--base-color-light);
+}
+.navlinks {
+	margin-left: auto;
+	align-items: center;
+	list-style: none;
+}
+
+.navlinks li {
+	width: 50px;
+	height: 30px;
+	background: var(--base-color-light);
+	margin-left: 20px;
+}
+/* ----- hero ------ */
+.hero__section {
+	width: 100%;
+	min-height: 100%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.hero__text {
+	max-width: 550px;
+	font-size: 1.3rem;
+	margin-top: 10%;
+	color: var(--base-color-dark);
+}
+/* ----- hero ------ */
+
+/* ======================== header end=================== */
+
+/* =============== first section =============== */
+.section {
+	min-height: 70vh;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+	background: var(--base-color-light);
+}
+
+.section__item {
+	width: 400px;
+	height: 350px;
+	background: var(--base-color-dark);
+}
+/* =============== first section end =============== */
+.card__section {
+	min-height: 20vh;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+	padding-block: 40px;
+	background: var(--base-color-light);
+}
+.card__section .section__item {
+	width: 200px;
+	height: 200px;
+}
+
+/* ================== footer ==================== */
+footer {
+	min-height: 40px;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--base-color-dark);
+}
+footer h3 {
+	color: var(--base-color-light);
+	font-size: 1.2rem;
+}

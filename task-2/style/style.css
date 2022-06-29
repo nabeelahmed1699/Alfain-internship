@@ -1,0 +1,273 @@
+/* ============ font families =========== */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* color */
+	--accent-color: #f78065;
+	--white-color: #ffffff;
+	--black-color: #000000;
+	--grey-color: #f7f7f7;
+
+	/* text formatting */
+	--headings-font: 'Merriweather', serif;
+	--paragraphs-font: 'Montserrat', sans-serif;
+}
+html {
+	font-size: 10px;
+}
+
+/* utility classes */
+
+/* font families */
+.ff__merriweather {
+	font-family: var(--headings-font);
+}
+.ff__montserrat {
+	font-family: var(--paragraphs-font);
+}
+/* backgrounds */
+.bg__accent {
+	background-color: var(--accent-color);
+}
+.bg__grey {
+	background-color: var(--grey-color);
+}
+.bg__black {
+	background: var(--black-color);
+}
+.bg__white {
+	background-color: var(--white-color);
+}
+/* font colors */
+.clr__accent {
+	color: var(--accent-color);
+}
+.clr__grey {
+	color: var(--grey-color);
+}
+.clr__black {
+	color: var(--black-color);
+}
+.clr__white {
+	color: var(--white-color);
+}
+
+.d__flex {
+	display: flex;
+	gap: var(--gap, 1rem);
+}
+/* ========== components ======== */
+.btn {
+	display: inline-block;
+	font-size: 1.6rem;
+	padding: 0.7em 2em;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+.container {
+	width: 100%;
+	max-width: 1280px;
+	margin-inline: auto;
+}
+.text__center {
+	text-align: center;
+}
+.section {
+	margin-top: 4rem;
+	padding: 2rem;
+}
+img,
+picture {
+	max-width: 100%;
+}
+body {
+	font-size: 1.6rem;
+	font-weight: 400;
+	font-family: var(--paragraphs-font);
+	line-height: 1.1;
+	min-height: 100vh;
+}
+/* ================ header =============== */
+.header {
+	height: 90vh;
+	background-image: url('../images/desktop-background.png');
+	background-size: cover;
+	background-position: top;
+	position: relative;
+}
+.navbar {
+	justify-content: space-between;
+	align-items: center;
+	padding: 4rem 6rem;
+}
+
+.header__text_box {
+	max-width: 550px;
+	min-height: 450px;
+	flex-direction: column;
+	justify-content: center;
+	padding-inline: 6rem;
+	position: absolute;
+	top: 60%;
+	left: 10%;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.header__heading {
+	font-size: 3rem;
+	line-height: 1.2;
+}
+.header__desc {
+	font-size: 2rem;
+	margin-block: 4rem;
+}
+
+.header__btn {
+	align-self: flex-start;
+	padding-inline: 4em;
+	font-size: 1.8rem;
+}
+.header__btn > img {
+	transform: translateY(3px);
+	margin-right: 5px;
+}
+
+/* ===================== card section ================= */
+.card__section {
+	--gap: 10rem;
+	margin-top: 20%;
+	justify-content: center;
+}
+.card__section .card {
+	max-width: 50.5rem;
+}
+.card__section .card .img__container {
+	margin-bottom: 3rem;
+}
+.card__section .card .card__desc {
+	margin-top: 2.5rem;
+	font-size: 1.4rem;
+}
+/* =================== Services ============= */
+.services__section {
+	margin-top: 20rem;
+}
+.services__container {
+	--gap: 4rem;
+	margin-top: 10rem;
+}
+.service__card {
+	flex-direction: column;
+	align-items: space-between;
+	flex-basis: 100px;
+	flex-grow: 1;
+}
+.service__card > p {
+	min-height: 50px;
+}
+.service__card p.clr__accent {
+	font-weight: bold;
+}
+/* ================== showcase =============== */
+.showcase {
+	--gap: 10%;
+}
+.left__showcase {
+	flex-basis: 30%;
+	flex-direction: column;
+}
+.left__showcase .showcase__btn {
+	align-self: flex-start;
+	padding-inline: 4em;
+}
+.left__showcase h3 {
+	font-size: 3rem;
+}
+.left__showcase .showcase__btn img {
+	margin-right: 8px;
+}
+.right__showcase {
+	flex-basis: 70%;
+}
+
+.profile {
+	flex-direction: column;
+	--gap: 1rem;
+}
+
+/* ================== goals ============= */
+.goals__container {
+	--gap: 4rem;
+}
+.goals__container .service__card {
+	margin-top: 12rem;
+	flex-basis: 100px;
+	flex-grow: 1;
+	--gap: 4rem;
+}
+.goals__container .service__card h3 {
+	min-height: 60px;
+	font-size: 2.2rem;
+}
+.goals__container .service__card p {
+	font-size: 1.4rem;
+}
+/* =================== footer ================ */
+footer {
+	margin-top: 10rem;
+	min-height: 600px;
+	align-items: center;
+	width: 100%;
+}
+.footer__upper {
+	width: 100%;
+	border-bottom: 0.5px solid var(--black-color);
+	padding-block: 10em;
+}
+.footer__upper_left h1 {
+	font-size: 2.3rem;
+}
+.footer__upper_left p {
+	margin-top: 2rem;
+	font-size: 5rem;
+	max-width: fit-content;
+}
+.footer__upper_right {
+	margin-left: 10em;
+}
+
+.links__container {
+	flex-direction: column;
+	margin-left: 5em;
+	--gap: 1em;
+}
+.links__container h3 {
+	font-size: 2rem;
+}
+.links__container a {
+	text-decoration: none;
+	color: var(--black-color);
+	font-size: 1.4rem;
+}
+.links__container a:hover {
+	text-decoration: underline;
+}
+.footer__bottom {
+	justify-content: space-between;
+	margin-block: 3rem;
+	font-size: 1.4rem;
+}
+.footer__bottom_right a {
+	margin-left: 3rem;
+	text-decoration: none;
+	color: var(--black-color);
+}
+.footer__bottom_right a:hover {
+	text-decoration: underline;
+}
